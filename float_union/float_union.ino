@@ -25,11 +25,15 @@ void setup() {
 
   // 查看u1的各个字节
   for(int i = 0;i<MAX_LENTH;i++){
-    // Serial.print(u1.s[i]);
+    Serial.print(u1.s[i]);
   }
-  // 查看u1的各个字节
+
+  // 直接打印double类型
+  Serial.print(u1.d);
+
+  // 查看u2的各个字节
   for(int i = 0;i<MAX_LENTH;i++){
-    // Serial.print(u2.s[i]);
+    Serial.print(u2.s[i]);
   }
 
   // 逐字节赋值
@@ -37,9 +41,8 @@ void setup() {
     u1.s[i] = u2.s[i];
   }
 
-  // 直接打印double类型
-  // Serial.print(u1.d);
-
+  // 查看u1是否改变
+  Serial.print(u1.d);
 }
 
 void loop() {
